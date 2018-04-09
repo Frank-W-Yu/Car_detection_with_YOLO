@@ -5,7 +5,7 @@ from keras import backend as K
 from keras.layers import Lambda
 from keras.layers.merge import concatenate
 from keras.models import Model
-from .yolo_darknet import compose, darknet_conv2d, darknet_conv2d_bn_leaky, darknet_body
+from yolo_darknet import compose, darknet_conv2d, darknet_conv2d_bn_leaky, darknet_body
 
 voc_anchors = np.array([[1.08, 1.19], [3.42, 4.41], [6.63, 11.38], [9.42, 5.11], 16.62, 10.52])
 voc_classes = ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat",
